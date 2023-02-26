@@ -20,11 +20,13 @@
           <input type="password" id="password" name="password" placeholder="Password" />
           
           <input type="submit" id='signUp' name="signUp_submit" value="Sign Up" />
-          
+
           <br> 
           <br> 
           <a href = "login.html">Login into Account</a>
-
+          <br>
+          <a href = "index.html">Done</a>
+          
         </div>
     </div>
 </body>
@@ -68,6 +70,7 @@
                     email: email,
                 })
                 //document.location.href = "index.html"; 
+                alert('User created!');
             })
             
             .catch((error) => {
