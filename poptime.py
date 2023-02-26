@@ -4,8 +4,10 @@ import json
 import sys
 from flask import Flask, redirect, url_for, render_template
 from datetime import datetime
+from datetime import date
 
-day = datetime.now().weekday
+
+day = date.today().weekday()
 hour = datetime.now().hour
 
 app = Flask(__name__)
@@ -17,7 +19,7 @@ cag_obj = livepopulartimes.get_populartimes_by_PlaceID("AIzaSyDDifvQyJnQ38Rm3XpB
 #cag = cag_obj['populartimes'][day]["data"][hour]
 
 livi_obj = livepopulartimes.get_populartimes_by_PlaceID("AIzaSyDDifvQyJnQ38Rm3XpBi-NUxCx7nKtLbrs", "ChIJvcb4esDHw4kRqKj17FN9pJA")
-livi =  livi_obj['populartimes'][0]['data'][hour]
+livi =  livi_obj['populartimes'][day]['data'][hour]
 
 cd_obj = livepopulartimes.get_populartimes_by_PlaceID("AIzaSyDDifvQyJnQ38Rm3XpBi-NUxCx7nKtLbrs", "ChIJ0wwzrWvGw4kR8X5vv1n9Rxg")
 cd = cd_obj['current_popularity']
