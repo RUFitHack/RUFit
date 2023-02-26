@@ -6,7 +6,7 @@
   body {
     margin: 0;
     padding: 0;
-    background: #DDD;
+    background: #a01616;
     font-size: 16px;
     color: #222;
     font-family: 'Roboto', sans-serif;
@@ -66,8 +66,8 @@
   
   input[type="text"]:focus,
   input[type="password"]:focus {
-    border-bottom: 2px solid #16a085;
-    color: #16a085;
+    border-bottom: 2px solid #a01616;
+    color: #a01616;
     transition: 0.2s ease;
   }
   
@@ -75,7 +75,7 @@
     margin-top: 28px;
     width: 120px;
     height: 32px;
-    background: #16a085;
+    background: #a01616;
     border: none;
     border-radius: 2px;
     color: #FFF;
